@@ -34,7 +34,7 @@ class TestLogin(unittest.TestCase):
 
         response_data = driver.find_element(By.CSS_SELECTOR,"#__next > main > div > div > form > div.flex.items-center.justify-center.text-xs.font-semibold.text-\[\#FF8181\].pb-4 > p").text
 
-        self.assertIn(response_data, 'Password/Email in invalid')
+        self.assertIn(response_data, 'Password/Email invalid')
 
     def tearDown(self): 
         self.driver.close()
